@@ -1,0 +1,59 @@
+  [1m[36m (149.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (81.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20160323125221)
+  [1m[35m (59.0ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `name` varchar(255), `profile` text, `position` varchar(255), `occupation` text, `avatar` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (41.3ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (26.2ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160323125221')
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePrototypes (20160405022458)
+  [1m[35m (41.2ms)[0m  CREATE TABLE `prototypes` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `catch_copy` varchar(255), `concept` text, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_prototypes_on_user_id`  (`user_id`) ) ENGINE=InnoDB
+  [1m[36m (89.5ms)[0m  [1mALTER TABLE `prototypes` ADD CONSTRAINT `fk_rails_8add56efc2`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160405022458')[0m
+  [1m[35m (2.9ms)[0m  COMMIT
+Migrating to CreateCapturedImages (20160405022520)
+  [1m[36m (35.6ms)[0m  [1mCREATE TABLE `captured_images` (`id` int(11) auto_increment PRIMARY KEY, `content` varchar(255), `status` int(11), `prototype_id` int(11),  INDEX `index_captured_images_on_prototype_id`  (`prototype_id`) ) ENGINE=InnoDB[0m
+  [1m[35m (87.4ms)[0m  ALTER TABLE `captured_images` ADD CONSTRAINT `fk_rails_9e708a4f57`
+FOREIGN KEY (`prototype_id`)
+  REFERENCES `prototypes` (`id`)
+
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160405022520')
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (2.9ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'protospace-in-dev_development'
+  AND fk.table_name = 'captured_images'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `captured_images`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'protospace-in-dev_development'
+  AND fk.table_name = 'prototypes'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `prototypes`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'protospace-in-dev_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
