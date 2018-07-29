@@ -16,11 +16,11 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
-gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
 
 group :development, :test do
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
