@@ -26,10 +26,12 @@
       %h4 Catch Copy
       %p
         = @prototype.catch_copy
-    .col-md-6
+    .col-md-3
       %h4 Concept
       %p
         = @prototype.concept
+    .col-md-3
+      = link_to '削除する', @prototype, method: :delete, class: "btn btn-primary btn-lg", role: "button"
     .col-md-3
       %h4 Tag List
       %ul.proto-tag-list.list-inline

@@ -98,6 +98,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :database_authenticatable
   # For bcrypt, this is the cost for hashing the password and defaults to 11. If
+
   # using other algorithms, it sets how many times you want the password to be hashed.=======
   # ==> Configuration for :database_authenticatable
   # For bcrypt, this is the cost for hashing the password and defaults to 10. If
@@ -108,6 +109,7 @@ Devise.setup do |config|
   # your test suite dramatically. However, it is STRONGLY RECOMMENDED to not use
   # a value less than 10 in other environments. Note that, for bcrypt (the default
   # algorithm), the cost increases exponentially with the number of stretches (e.g.
+
   # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
   config.stretches = Rails.env.test? ? 1 : 11
 
@@ -124,6 +126,7 @@ Devise.setup do |config|
 
   # Setup a pepper to generate the encrypted password.
   # config.pepper = 'e631ea2ef98eb22a01a2b28c3833d8fbdd4391cfbd2ff8a2a6fe471a59ccad6216df86e84c99e5708436087cfa5bb49ce84021af374d36a5c852d64878c607c3'
+
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
