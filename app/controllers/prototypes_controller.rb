@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
-  before_action :set_prototype, only: [:show, :destroy]
+  before_action :set_prototype, only: [:show, :destroy, :edit, :update]
 
   def index
     @prototypes = Prototype.all
@@ -26,6 +26,19 @@ class PrototypesController < ApplicationController
     @prototype.destroy if current_user.id == @prototype.user.id
   end
 
+  def edit
+  end
+
+  def update
+    
+    if @prototype.update(prototype_params)
+      redirect_to @prototype, notice: 'prototype was successfully updated'
+    else
+      render :index 
+    end
+
+  end
+
   private
 
   def set_prototype
@@ -39,6 +52,6 @@ class PrototypesController < ApplicationController
       :concept,
       :user_id,
       captured_images_attributes: [:content, :status]
-    )
+    ).merge(captured_images.id)
   end
 end
