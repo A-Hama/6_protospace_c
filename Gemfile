@@ -17,11 +17,11 @@ gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'pg', group: :production
+gem 'sqlite3', :group => [:development, :test]
 gem "rails_12factor", group: :production
 
 group :development, :test do
   gem 'byebug'
-  gem 'sqlite3'
 end
 
 group :development do
