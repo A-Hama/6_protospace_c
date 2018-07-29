@@ -1,7 +1,5 @@
 /tmp/*
 /log/*
-!/log/.keep
-/tmp
 
 #Ignore all images
 public/uploads/*
