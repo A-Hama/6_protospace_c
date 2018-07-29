@@ -26,5 +26,5 @@ group :development do
   gem 'spring'
 end
 
-gem 'sqlite3', group: [:development, :test]
+# gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
