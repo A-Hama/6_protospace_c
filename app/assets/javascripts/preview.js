@@ -11,11 +11,8 @@ $(function(){
     }
 
     // ファイル読み込みが完了した際のイベント登録
-    filereader.onload = (function(file) {
-      return function(e) {
-        //既存のプレビューを削除
-        // $find_img.remove();
-        // .prevewの領域の中にロードした画像を表示するimageタグを追加
+    filereader.onload = function() {
+
         $(".cover-image-upload").prepend($('<img>').attr({
                   src: e.target.result,
                   width: "100%",
@@ -30,9 +27,7 @@ $(function(){
                   // class: "cover-image-upload",
                   title: file.name
               }));
-      };
-    })(file);
-
+      }
     filereader.readAsDataURL(file);
   });
 });
