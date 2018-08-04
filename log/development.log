@@ -839,3 +839,797 @@ Processing by PrototypesController#new as HTML
   Rendered shared/_messages.html.haml (0.1ms)
   Rendered shared/_footer.html.haml (0.1ms)
 Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 13:59:25 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (27.0ms)
+  Rendered shared/_header.html.haml (10.4ms)
+  Rendered shared/_messages.html.haml (0.4ms)
+  Rendered shared/_footer.html.haml (0.3ms)
+Completed 200 OK in 274ms (Views: 245.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/preview.self-ac6e67b152cf700a3fb9e2984b7216454b38c638965bfa0bfc5162cabc76701d.js?body=1" for ::1 at 2018-08-04 13:59:25 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 13:59:52 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (4.1ms)
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:01:08 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (4.1ms)
+  Rendered shared/_header.html.haml (2.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:01:56 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (5.5ms)
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 154ms (Views: 151.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/preview.self-46bf133d44dc18de4a8bbdd326e64645efa90ba2fdba053e33e5ac4fb4166d3e.js?body=1" for ::1 at 2018-08-04 14:01:56 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:02:42 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (4.3ms)
+  Rendered shared/_header.html.haml (1.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:07:27 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (9.7ms)
+  Rendered shared/_header.html.haml (2.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 161ms (Views: 156.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/preview.self-3397eaa06e96a2c787c0f293c3e3c8924a296d3f0b32226b3b9f42c2d22932d9.js?body=1" for ::1 at 2018-08-04 14:07:27 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:09:20 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.0ms)
+  Rendered shared/_header.html.haml (3.7ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 272ms (Views: 269.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-2e1b6e5fc970eed8a3d6bc878b7a01bf912eb68054a1640a901bda35c08fca98.js?body=1" for ::1 at 2018-08-04 14:09:20 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:09:53 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (18.0ms)
+  Rendered shared/_header.html.haml (10.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (1.5ms)
+Completed 200 OK in 274ms (Views: 271.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/preview.self-287702f7a899e6d377c552c71e06b4e9c7f7c41ebde1b8182a4f90f432d7eb7f.js?body=1" for ::1 at 2018-08-04 14:09:54 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:11:19 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (12.8ms)
+  Rendered shared/_header.html.haml (3.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 119ms (Views: 115.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:11:51 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (7.8ms)
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 69ms (Views: 65.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:12:10 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.3ms)
+  Rendered shared/_header.html.haml (4.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 152ms (Views: 150.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-a2378aee4e6c894cc9601b20a2553b57ec3d91d0a7733ccdf80551d3a704a7ef.js?body=1" for ::1 at 2018-08-04 14:12:10 +0900
+
+
+Started GET "/" for ::1 at 2018-08-04 14:12:25 +0900
+Processing by PrototypesController#index as HTML
+  [1m[35mPrototype Load (0.5ms)[0m  SELECT `prototypes`.* FROM `prototypes`
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (6.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.haml (5.7ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.3ms)
+Completed 200 OK in 96ms (Views: 94.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:13:21 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (4.8ms)
+  Rendered shared/_header.html.haml (4.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 149ms (Views: 147.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/preview.self-bcbed23ad1075e303a9ed9c422ac0975eed8306d84cb8140785265618a508819.js?body=1" for ::1 at 2018-08-04 14:13:21 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:13:58 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (4.3ms)
+  Rendered shared/_header.html.haml (1.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:14:23 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (4.0ms)
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:15:35 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (8.4ms)
+  Rendered shared/_header.html.haml (2.4ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:17:33 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (5.1ms)
+  Rendered shared/_header.html.haml (2.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 165ms (Views: 162.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/preview.self-691a6b2eb0ce57e00376f736a3e57a08b001bb8ff78cf8fae9111e7cc0c7fb93.js?body=1" for ::1 at 2018-08-04 14:17:34 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:22:17 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (7.3ms)
+  Rendered shared/_header.html.haml (2.7ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 202ms (Views: 198.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-ac4a852d7e2fecb6df5666a981da6db347e32b3827a7200eafffd4794b51467a.js?body=1" for ::1 at 2018-08-04 14:22:17 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:27:25 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (30.5ms)
+  Rendered shared/_header.html.haml (3.8ms)
+  Rendered shared/_messages.html.haml (0.4ms)
+  Rendered shared/_footer.html.haml (0.4ms)
+Completed 200 OK in 262ms (Views: 230.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/preview.self-184d217b54c731045ac77887968bfbc2934af32e02e1611e447abc2f61890ccf.js?body=1" for ::1 at 2018-08-04 14:27:25 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:28:43 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (7.0ms)
+  Rendered shared/_header.html.haml (4.0ms)
+  Rendered shared/_messages.html.haml (1.3ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 224ms (Views: 221.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-9ac6cc3fb37b125337185682ffad6d5aa3a2cad97ef00e00e3d2b012ed2cc987.js?body=1" for ::1 at 2018-08-04 14:28:43 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:29:32 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (7.6ms)
+  Rendered shared/_header.html.haml (4.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 162ms (Views: 159.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-92100af81fd2e2429862b1bc0b50d7ddeb28207b0ca307c68fe5b939a2be4712.js?body=1" for ::1 at 2018-08-04 14:29:32 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:30:06 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.7ms)
+  Rendered shared/_header.html.haml (2.8ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:32:34 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (9.2ms)
+  Rendered shared/_header.html.haml (1.5ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 367ms (Views: 363.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-b9cd304cb5d2d3a41b49b6272081bb7822c128d4b15167243c8ab155d38ef0fd.js?body=1" for ::1 at 2018-08-04 14:32:35 +0900
+
+
+Started POST "/prototypes" for ::1 at 2018-08-04 14:33:17 +0900
+Processing by PrototypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NXkMHl2REyzpQrT9RIIggV9IYN6mlT6V6XY4oNDLM2WABuas6vxo3zFsRKhBdu+9eh3/c1ypazK7AmREnHjc7g==", "prototype"=>{"user_id"=>"1", "title"=>"sample1", "captured_images_attributes"=>{"0"=>{"content"=>#<ActionDispatch::Http::UploadedFile:0x007fa202274510 @tempfile=#<Tempfile:/var/folders/7y/rw7gr6w17t75jpm86kr8bk400000gn/T/RackMultipart20180804-28260-wwidsg.JPG>, @original_filename="mOT005.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"prototype[captured_images_attributes][0][content]\"; filename=\"mOT005.JPG\"\r\nContent-Type: image/jpeg\r\n">, "status"=>"main"}, "1"=>{"status"=>"sub"}, "2"=>{"status"=>"sub"}, "3"=>{"status"=>"sub"}}, "catch_copy"=>"", "concept"=>""}, "commit"=>"PUBLISH"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Redirected to 
+Completed 500 Internal Server Error in 1670ms (ActiveRecord: 0.6ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"#<CapturedImage:0x007fa201dd7e30>", :controller=>"prototypes"}):
+  app/controllers/prototypes_controller.rb:18:in `create'
+
+
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-3804d017333d/actionpack/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-3804d017333d/actionpack/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-3804d017333d/actionpack/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/rails-3804d017333d/actionpack/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.4ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.7ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/ysumiyoshi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (222.2ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:45:16 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (25.9ms)
+  Rendered shared/_header.html.haml (3.9ms)
+  Rendered shared/_messages.html.haml (0.4ms)
+  Rendered shared/_footer.html.haml (0.2ms)
+Completed 200 OK in 200ms (Views: 174.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:48:20 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (7.2ms)
+  Rendered shared/_header.html.haml (2.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 303ms (Views: 299.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-e13b86a33206021d9e7a0a6f1ce83829033a98d1380fd2c5461ac5fc82577041.js?body=1" for ::1 at 2018-08-04 14:48:20 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:54:09 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (32.8ms)
+  Rendered shared/_header.html.haml (4.3ms)
+  Rendered shared/_messages.html.haml (0.4ms)
+  Rendered shared/_footer.html.haml (0.2ms)
+Completed 200 OK in 262ms (Views: 238.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/preview.self-bf298c6c1f83d9e3273da70ac5b44121dbd60969754c3b39901a2fd4f9a1715b.js?body=1" for ::1 at 2018-08-04 14:54:09 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:56:44 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (6.9ms)
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.3ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 187ms (Views: 184.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/preview.self-d3f3b525a386672ec5648e645b84fe72662f65488a942d4c3800a8fce652b310.js?body=1" for ::1 at 2018-08-04 14:56:44 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 14:58:33 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.4ms)
+  Rendered shared/_header.html.haml (2.5ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 160ms (Views: 157.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-e07b9ce12cb4ff79fdd389cbb24b25e0ba1884a54acb53d5a91cb8d6979e74c7.js?body=1" for ::1 at 2018-08-04 14:58:33 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:00:24 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (25.8ms)
+  Rendered shared/_header.html.haml (2.7ms)
+  Rendered shared/_messages.html.haml (0.3ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 229ms (Views: 205.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/preview.self-c16d57fa4cf65846a03cdd1e7e9a54a56bf9f1b41c4b0703df58acb26b10a123.js?body=1" for ::1 at 2018-08-04 15:00:24 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:01:07 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (6.4ms)
+  Rendered shared/_header.html.haml (3.6ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 96ms (Views: 93.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:09:45 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (40.9ms)
+  Rendered shared/_header.html.haml (10.7ms)
+  Rendered shared/_messages.html.haml (0.3ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 466ms (Views: 423.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/preview.self-901e29063ba92c75e96d2bb8d2844d3dafe25606a54bac0625eff2575ea13f9a.js?body=1" for ::1 at 2018-08-04 15:09:46 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:10:07 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.8ms)
+  Rendered shared/_header.html.haml (2.2ms)
+  Rendered shared/_messages.html.haml (0.3ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 151ms (Views: 147.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-122fc7adbcf6d1f7633632baac6c711f80be2f09ef1eb6b2c70ad2cbf80acc1a.js?body=1" for ::1 at 2018-08-04 15:10:07 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:10:43 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (6.1ms)
+  Rendered shared/_header.html.haml (1.5ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:11:04 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (4.2ms)
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:11:44 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (8.5ms)
+  Rendered shared/_header.html.haml (2.3ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 270ms (Views: 266.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/preview.self-a464856c4281a7d37981d089367bfc482ccf42b3395d8962adb6ee1cc6824746.js?body=1" for ::1 at 2018-08-04 15:11:44 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:12:27 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (4.5ms)
+  Rendered shared/_header.html.haml (2.5ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 138ms (Views: 134.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-64ae6cd9cc41b1ce133ff33a75dc919c3a8b2f8f26ec2c2ea61fac232b08e1f8.js?body=1" for ::1 at 2018-08-04 15:12:27 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:13:04 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (6.7ms)
+  Rendered shared/_header.html.haml (1.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:13:30 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.6ms)
+  Rendered shared/_header.html.haml (2.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 136ms (Views: 132.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-3a36444fff11d609b092497ef4a0f5259ab992505b87b9a631827ea0b09c2b82.js?body=1" for ::1 at 2018-08-04 15:13:31 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:14:02 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (3.6ms)
+  Rendered shared/_header.html.haml (1.9ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 123ms (Views: 120.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/preview.self-2191537dbbf99a0023683e5b00071bd9e6a9cc5da0869cc240d7e77738316cfd.js?body=1" for ::1 at 2018-08-04 15:14:02 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:21:46 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (11.9ms)
+  Rendered shared/_header.html.haml (2.9ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 184ms (Views: 179.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/preview.self-d01fcdf4692ef7089309d32ea9eb88afaa2036e99e8c88672bb3bbfccfe3b52b.js?body=1" for ::1 at 2018-08-04 15:21:47 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:26:33 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (7.4ms)
+  Rendered shared/_header.html.haml (3.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 306ms (Views: 298.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/preview.self-f5246f15442bddd5d91a613173fbfbf1136eb03eb3c88d666ec34333fe02097d.js?body=1" for ::1 at 2018-08-04 15:26:33 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:29:12 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (7.0ms)
+  Rendered shared/_header.html.haml (2.4ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 189ms (Views: 184.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-e95b975fec8a168731e642cf14e1e4180b5925e21b1ea7955e32351c9a016444.js?body=1" for ::1 at 2018-08-04 15:29:12 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:30:06 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (4.6ms)
+  Rendered shared/_header.html.haml (2.2ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 144ms (Views: 141.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-78dec0155e7ee3fdddff9940c31d8465f8583a1c79fd9a3d7d2114b26febbde9.js?body=1" for ::1 at 2018-08-04 15:30:06 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:32:01 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (8.0ms)
+  Rendered shared/_header.html.haml (2.2ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 251ms (Views: 249.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/preview.self-1e716121c94fff268d797ada8dc29443f269494d0e6ca7690531ffeab52c9f89.js?body=1" for ::1 at 2018-08-04 15:32:02 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:34:43 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (4.1ms)
+  Rendered shared/_header.html.haml (1.8ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 128ms (Views: 126.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-3b1fb70ddea2ad36e8500a1addfdcc1de05284e6fdfc4756852aa3faffec813c.js?body=1" for ::1 at 2018-08-04 15:34:44 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:35:08 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.1ms)
+  Rendered shared/_header.html.haml (2.1ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 152ms (Views: 150.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-1c512f25d0a8a1c31de4e85091d28cb6e63acc03239175e1b82eafc5bf18be65.js?body=1" for ::1 at 2018-08-04 15:35:08 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:36:21 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (7.0ms)
+  Rendered shared/_header.html.haml (2.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 159ms (Views: 155.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/preview.self-10598f4d6cacfdd44a7c52700e1e1051e64a63c310e9a2cba0bdcc010a8f1abe.js?body=1" for ::1 at 2018-08-04 15:36:21 +0900
+
+
+Started GET "/" for ::1 at 2018-08-04 15:36:32 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.6ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (14.9ms)
+  [1m[35mUser Load (6.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (11.2ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 102ms (Views: 93.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:39:23 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.0ms)
+  Rendered shared/_header.html.haml (1.6ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 130ms (Views: 128.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-87392c48edef87408ca7dca8e6d40740d90ea6e70d91f8fbcd127e3270e95f98.js?body=1" for ::1 at 2018-08-04 15:39:23 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:40:40 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (5.6ms)
+  Rendered shared/_header.html.haml (2.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.0ms)
+Completed 200 OK in 148ms (Views: 145.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/preview.self-1a3ed258279da9ea53e89d3ac59fbd51c96270a34569148c5b5e13cc7b75b60e.js?body=1" for ::1 at 2018-08-04 15:40:40 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:40:52 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.6ms)
+  Rendered shared/_header.html.haml (1.5ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:44:23 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (25.6ms)
+  Rendered shared/_header.html.haml (4.8ms)
+  Rendered shared/_messages.html.haml (0.4ms)
+  Rendered shared/_footer.html.haml (0.2ms)
+Completed 200 OK in 150ms (Views: 125.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:47:20 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (8.5ms)
+  Rendered shared/_header.html.haml (4.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 165ms (Views: 161.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-e500a9ed88f7d3c43e2c3882609ccc27867ff8ba54d75a9fc1ebe6a7d3cbce2b.js?body=1" for ::1 at 2018-08-04 15:47:20 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:49:49 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (4.1ms)
+  Rendered shared/_header.html.haml (2.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:50:29 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (5.9ms)
+  Rendered shared/_header.html.haml (2.7ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 155ms (Views: 153.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-1dcc4892f70c1313e2ffe13b9e59936457942407456029167aa3c6d4c7b94ded.js?body=1" for ::1 at 2018-08-04 15:50:29 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:53:18 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (3.9ms)
+  Rendered shared/_header.html.haml (2.7ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 162ms (Views: 160.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/preview.self-7130c74cd41583286103937c1159c9c0cf8cee87ae8f16abe6bd3996334aef8e.js?body=1" for ::1 at 2018-08-04 15:53:19 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:56:18 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (4.5ms)
+  Rendered shared/_header.html.haml (5.7ms)
+  Rendered shared/_messages.html.haml (0.2ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 283ms (Views: 280.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/preview.self-d1a38d120dc113dbf310d37181b0ffb747d55741c3cedc3be3ac207af7bf67cd.js?body=1" for ::1 at 2018-08-04 15:56:18 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 15:57:28 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (13.6ms)
+  Rendered shared/_header.html.haml (2.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 245ms (Views: 238.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-1f612980613636fc7820312378be654073dde638ef51c8f75b3b9d20ff2d6996.js?body=1" for ::1 at 2018-08-04 15:57:29 +0900
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 16:07:40 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (11.4ms)
+  Rendered shared/_header.html.haml (4.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 121ms (Views: 116.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 16:11:37 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (7.1ms)
+  Rendered shared/_header.html.haml (3.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 177ms (Views: 172.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/preview.self-50d682c1a705e99edab8899d885367df06ef5f5c57b142a5a89ba03001636d56.js?body=1" for ::1 at 2018-08-04 16:11:38 +0900
+
+
+Started GET "/" for ::1 at 2018-08-04 16:11:49 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.9ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (14.8ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (40.2ms)
+  Rendered shared/_messages.html.haml (0.5ms)
+  Rendered shared/_footer.html.haml (0.2ms)
+Completed 200 OK in 215ms (Views: 199.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 16:18:28 +0900
+Processing by PrototypesController#new as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered prototypes/new.html.haml within layouts/application (41.4ms)
+  Rendered shared/_header.html.haml (4.4ms)
+  Rendered shared/_messages.html.haml (1.0ms)
+  Rendered shared/_footer.html.haml (0.2ms)
+Completed 200 OK in 227ms (Views: 203.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/prototypes/new" for ::1 at 2018-08-04 16:20:34 +0900
+Processing by PrototypesController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered prototypes/new.html.haml within layouts/application (7.1ms)
+  Rendered shared/_header.html.haml (3.0ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 81ms (Views: 78.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2018-08-04 16:20:36 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (1.0ms)[0m  [1mSELECT `prototypes`.* FROM `prototypes`[0m
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  Rendered prototypes/index.html.haml within layouts/application (8.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (4.3ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 107ms (Views: 104.0ms | ActiveRecord: 1.5ms)
