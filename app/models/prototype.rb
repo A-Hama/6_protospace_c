@@ -16,7 +16,7 @@ class Prototype < ActiveRecord::Base
   end
 
   def set_main_thumbnail
-    captured_images.main.first.content
+    captured_images.find_by(status: 0)
   end
 
   def posted_date
