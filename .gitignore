@@ -13,3 +13,5 @@
 #Ignore all images
 public/uploads/*
 
+
+*.cache
