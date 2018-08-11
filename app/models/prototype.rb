@@ -9,6 +9,8 @@ class Prototype < ActiveRecord::Base
             :concept,
             presence: true
 
+  
+
   def reject_sub_images(attributed)
     attributed['content'].blank?
   end
