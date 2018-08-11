@@ -1,5 +1,7 @@
 /tmp/*
 /log/*
-
+/log
 #Ignore all images
 public/uploads/*
+
+log/development.log
