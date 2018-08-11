@@ -1,6 +1,5 @@
 $(document).on('turbolinks:load', function() {
   $(".image_file").on('change', function() {
-    console.log(this);
     var file = $(this).prop('files')[0],
         find_img = $(this).parent().find("img"),
         filereader = new FileReader();
