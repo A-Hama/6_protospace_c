@@ -43,6 +43,22 @@ class PrototypesController < ApplicationController
     end
   end
 
+  def popular
+    @prototypes = Prototype.('likes_count DESC').limit(20)
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
+  def newest
+    @prototypes = Prototype.order('created_at DESC').limit(20)
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   private
 
     def set_prototype
