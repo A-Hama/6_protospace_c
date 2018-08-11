@@ -33,9 +33,13 @@
     .col-md-3
       = link_to '削除する', @prototype, method: :delete, class: "btn btn-primary btn-lg", role: "button"
     .col-md-3
+      %div{id: "likes_buttons"}
+        = render 'likes/like_button', prototype: @prototype, likes: @likes, like: @like
+    .col-md-3
       %h4 Tag List
       %ul.proto-tag-list.list-inline
         %li
           %a{href: "#", class: "btn btn-default"} iPad
         %li
           %a{href: "#", class: "btn btn-default"} wireframe
+
