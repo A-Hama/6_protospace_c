@@ -236,6 +236,10 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
+<<<<<<< HEAD
+=======
+  binding_of_caller
+>>>>>>> master
   bootstrap-sass
   bullet
   byebug

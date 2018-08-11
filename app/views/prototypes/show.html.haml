@@ -31,7 +31,9 @@
       %p
         = @prototype.concept
     .col-md-3
+    - if user_signed_in? && current_user.id == @prototype.user_id
       = link_to '削除する', @prototype, method: :delete, class: "btn btn-primary btn-lg", role: "button"
+      = link_to '編集する', edit_prototype_path(@prototype), class: "btn btn-primary btn-lg", role: "button"
     .col-md-3
       %div{id: "likes_buttons"}
         = render 'likes/like_button', prototype: @prototype, likes: @likes, like: @like
