@@ -19,7 +19,6 @@ gem 'rmagick'
 gem 'pg', group: :production
 gem 'sqlite3', :group => [:development, :test]
 gem "rails_12factor", group: :production
-gem 'pry-byebug'
 
 group :development, :test do
   gem 'byebug'

@@ -56,29 +56,19 @@ class PrototypesController < ApplicationController
     @prototype = Prototype.find(params[:id])
   end
 
-  # def prototype_params
-  #  params.require(:prototype).permit(
-  #    :title,
-  #    :catch_copy,
-  #    :concept,
-  #    :user_id,
-  #    captured_images_attributes: [:content, :status, :id],
-  #    tags_attributes: [:id, :name]
-  #  ).merge(user_id: current_user.id)
 
-
- def prototype_params
-   params.require(:prototype).permit(
-     :title,
-     :catch_copy,
-     :concept,
-     :user_id,
-     captured_images_attributes: [:content, :status, :id]
-   )
- end
-
-  def set_main_thumbnail
-    captured_images.find_by(status: 0)
+  def prototype_params
+    params.require(:prototype).permit(
+      :title,
+      :catch_copy,
+      :concept,
+      :user_id,
+      captured_images_attributes: [:content, :status, :id]
+    )
   end
+
+    def set_main_thumbnail
+      captured_images.find_by(status: 0)
+    end
 
 end
