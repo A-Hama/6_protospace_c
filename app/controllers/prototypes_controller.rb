@@ -32,6 +32,7 @@ class PrototypesController < ApplicationController
   def set_prototype
     @prototype = Prototype.find(params[:id])
     @like = @prototype.likes
+  end
 
   def edit
     @captures = @prototype.captured_images
