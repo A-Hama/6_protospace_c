@@ -13,7 +13,7 @@
           .cover-image-upload#main_image_uploader
             = f.fields_for :captured_images, @main_image do |image|
               %img
-              = image.file_field :content, value: @main_image
+              = image.file_field :content
               = image.hidden_field :status, value: "main"
         .col-md-12
           %h4 Sub Thumbnails
