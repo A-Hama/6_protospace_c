@@ -27,12 +27,23 @@ class PrototypesController < ApplicationController
   end
 
   def edit
+    #  @main_image = @prototype.set_main_thumbnail
+    @captures = @prototype.captured_images
+      @captures.each do |capture|
+      if capture.status == 0
+        @main_image = capture
+      else
+        @sub_image = capture
+      end
+    end
+    return @main_image
+    return @sub_image
   end
 
   def update
-    
-    if @prototype.update(prototype_params)
-      redirect_to @prototype, notice: 'prototype was successfully updated'
+    if @prototype.user_id == current_user.id
+      @prototype.update(prototype_params)
+      redirect_to root_url, notice: 'prototype was successfully updated'
     else
       render :index 
     end
@@ -45,13 +56,29 @@ class PrototypesController < ApplicationController
     @prototype = Prototype.find(params[:id])
   end
 
-  def prototype_params
-    params.require(:prototype).permit(
-      :title,
-      :catch_copy,
-      :concept,
-      :user_id,
-      captured_images_attributes: [:content, :status]
-    ).merge(captured_images.id)
+  # def prototype_params
+  #  params.require(:prototype).permit(
+  #    :title,
+  #    :catch_copy,
+  #    :concept,
+  #    :user_id,
+  #    captured_images_attributes: [:content, :status, :id],
+  #    tags_attributes: [:id, :name]
+  #  ).merge(user_id: current_user.id)
+
+
+ def prototype_params
+   params.require(:prototype).permit(
+     :title,
+     :catch_copy,
+     :concept,
+     :user_id,
+     captured_images_attributes: [:content, :status, :id]
+   )
+ end
+
+  def set_main_thumbnail
+    captured_images.find_by(status: 0)
   end
+
 end

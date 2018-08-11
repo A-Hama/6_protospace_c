@@ -11,17 +11,28 @@
         .col-md-12
           %h4 Main Thumbnail
           .cover-image-upload#main_image_uploader
-            = f.fields_for :captured_images do |image|
+            = f.fields_for :captured_images, @main_image do |image|
               %img
-              = image.file_field :content, required: true
+              = image.file_field :content, value: @main_image
               = image.hidden_field :status, value: "main"
+              -# = image_tag(@prototype.set_main_thumbnail)
+        -# .col-md-12
+          -# %h4 Sub Thumbnails
+          -# %ul.proto-sub-list.list-group
+          -#   - 3.times do |i|
+          -#     %li.list-group-item.col-md-4
+          -#       .image-upload
+          -#         = f.fields_for :captured_images, @prototype.sub_images[i] do |image|
+          -#           %img
+          -#           = image.file_field :content
+          -#           = image.hidden_field :status, value: "sub"
         .col-md-12
           %h4 Sub Thumbnails
           %ul.proto-sub-list.list-group
             - 3.times do |i|
               %li.list-group-item.col-md-4
                 .image-upload
-                  = f.fields_for :captured_images do |image|
+                  = f.fields_for :captured_images, @sub_image do |image|
                     %img
                     = image.file_field :content
                     = image.hidden_field :status, value: "sub"

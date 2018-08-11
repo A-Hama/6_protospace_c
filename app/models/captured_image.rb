@@ -1,9 +1,9 @@
 class CapturedImage < ActiveRecord::Base
-  belongs_to :Prototype
+  belongs_to :prototype
 
   mount_uploader :content, PrototypeImageUploader
 
-  enum status: %i(main sub)
+  enum status: { main: 0, sub: 1 }
 
   validates :content,
             :status,
