@@ -1,17 +1,16 @@
-$(function(){
+$(document).on('turbolinks:load', function() {
   $(".image_file").on('change', function() {
     console.log(this);
     var file = $(this).prop('files')[0],
         find_img = $(this).parent().find("img"),
         filereader = new FileReader();
-        var view_box = $(this).parent();
+        view_box = $(this).parent();
 
     if(find_img.length){
        find_img.remove();
     }
 
     filereader.onload = function() {
-
         $(view_box).prepend($('<img>').attr({
                   src: filereader.result,
                   width: "100%",
@@ -22,5 +21,4 @@ $(function(){
     filereader.readAsDataURL(file);
   });
 });
-
 
