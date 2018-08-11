@@ -16,7 +16,7 @@ class PrototypesController < ApplicationController
       redirect_to :root, notice: 'New prototype was successfully created'
     else
       redirect_to ({ action: new }), alert: 'YNew prototype was unsuccessfully created'
-     end
+    end
   end
 
   def show
@@ -29,15 +29,9 @@ class PrototypesController < ApplicationController
   def edit
     #  @main_image = @prototype.set_main_thumbnail
     @captures = @prototype.captured_images
-      @captures.each do |capture|
-      if capture.status == 0
-        @main_image = capture
-      else
-        @sub_image = capture
-      end
+    @captures.each do |capture|
+      capture.status == 0 ? @main_image = capture : @sub_image = capture
     end
-    return @main_image
-    return @sub_image
   end
 
   def update
@@ -47,28 +41,26 @@ class PrototypesController < ApplicationController
     else
       render :index 
     end
-
   end
 
   private
 
-  def set_prototype
-    @prototype = Prototype.find(params[:id])
-  end
+    def set_prototype
+      @prototype = Prototype.find(params[:id])
+    end
 
 
-  def prototype_params
-    params.require(:prototype).permit(
-      :title,
-      :catch_copy,
-      :concept,
-      :user_id,
-      captured_images_attributes: [:content, :status, :id]
-    )
-  end
+    def prototype_params
+      params.require(:prototype).permit(
+        :title,
+        :catch_copy,
+        :concept,
+        :user_id,
+        captured_images_attributes: [:content, :status, :id]
+      )
+    end
 
     def set_main_thumbnail
       captured_images.find_by(status: 0)
     end
-
 end
