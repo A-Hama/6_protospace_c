@@ -9,7 +9,8 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
-
+/log
 #Ignore all images
 public/uploads/*
 
+log/development.log

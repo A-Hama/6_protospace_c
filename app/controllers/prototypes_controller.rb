@@ -26,8 +26,15 @@ class PrototypesController < ApplicationController
     @prototype.destroy if current_user.id == @prototype.user.id
   end
 
+
+  private
+
+  def set_prototype
+    @prototype = Prototype.find(params[:id])
+    @like = @prototype.likes
+  end
+
   def edit
-    #  @main_image = @prototype.set_main_thumbnail
     @captures = @prototype.captured_images
     @captures.each do |capture|
       capture.status == 0 ? @main_image = capture : @sub_image = capture
