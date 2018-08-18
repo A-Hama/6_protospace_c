@@ -20,6 +20,8 @@ class PrototypesController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @prototype.comments.all
   end
 
   def destroy
@@ -42,7 +44,6 @@ class PrototypesController < ApplicationController
     end
   end
 
-
   private
 
   def set_prototype
@@ -60,7 +61,13 @@ class PrototypesController < ApplicationController
     )
   end
 
-    def set_main_thumbnail
-      captured_images.find_by(status: 0)
-    end
+  def set_main_thumbnail
+    captured_images.find_by(status: 0)
+  end
+
+  def comment_params
+    params.require(:comment).permit(:content, :prototype_id)
+  end
+
+
 end
