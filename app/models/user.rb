@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 
   has_many :prototypes
   has_many :likes, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   validates :name, presence: true
 
