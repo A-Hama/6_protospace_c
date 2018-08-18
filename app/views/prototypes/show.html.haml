@@ -41,3 +41,7 @@
           %a{href: "#", class: "btn btn-default"} iPad
         %li
           %a{href: "#", class: "btn btn-default"} wireframe
+    .col-md-3
+      .like-button{id: "likes_buttons"}
+        = render 'likes/like_button', prototype: @prototype, likes: @likes, like: @like
+

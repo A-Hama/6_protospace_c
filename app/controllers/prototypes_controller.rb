@@ -27,7 +27,6 @@ class PrototypesController < ApplicationController
   end
 
   def edit
-    #  @main_image = @prototype.set_main_thumbnail
     @captures = @prototype.captured_images
     @captures.each do |capture|
       capture.status == 0 ? @main_image = capture : @sub_image = capture
@@ -42,6 +41,7 @@ class PrototypesController < ApplicationController
       render :index 
     end
   end
+
 
   def popular
     @prototype = Prototype.popular.limit(20)
@@ -61,22 +61,22 @@ class PrototypesController < ApplicationController
 
   private
 
-    def set_prototype
-      @prototype = Prototype.find(params[:id])
-    end
+  def set_prototype
+    @prototype = Prototype.find(params[:id])
+    @like = @prototype.likes
+  end
 
+  def prototype_params
+    params.require(:prototype).permit(
+      :title,
+      :catch_copy,
+      :concept,
+      :user_id,
+      captured_images_attributes: [:content, :status, :id]
+    )
+  end
 
-    def prototype_params
-      params.require(:prototype).permit(
-        :title,
-        :catch_copy,
-        :concept,
-        :user_id,
-        captured_images_attributes: [:content, :status, :id]
-      )
-    end
-
-    def set_main_thumbnail
-      captured_images.find_by(status: 0)
-    end
+  def set_main_thumbnail
+    captured_images.find_by(status: 0)
+  end
 end

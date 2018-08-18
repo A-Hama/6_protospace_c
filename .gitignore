@@ -11,7 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
-
 #Ignore all images
 public/uploads/*
 
+log/development.log
