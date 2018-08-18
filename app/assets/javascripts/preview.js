@@ -4,7 +4,6 @@ $(document).on('turbolinks:load', function() {
         find_img = $(this).parent().find("img"),
         filereader = new FileReader();
         view_box = $(this).parent();
-
     if(find_img.length){
        find_img.remove();
     }
