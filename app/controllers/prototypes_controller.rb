@@ -44,7 +44,7 @@ class PrototypesController < ApplicationController
   end
 
   def popular
-    @prototypes = Prototype.('likes_count DESC').limit(20)
+    @prototype = Prototype.popular.limit(20)
     respond_to do |format|
       format.html
       format.json
