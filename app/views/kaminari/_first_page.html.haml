@@ -5,8 +5,8 @@
 -#    total_pages:   total number of pages
 -#    per_page:      number of items to fetch per page
 -#    remote:        data-remote
-%li.first
-  = link_to (current_page.first? ? "#" : url), "aria-label": "Previous", remote: "remote" do
+%li.first{ class: "#{'disabled' if current_page.first?}" }
+  = link_to (current_page.first? ? "#" : url), "aria-label": "Previous", remote: remote do
     %span{"aria-hidden": "true"} «
     %span.sr-only
       = t('views.pagination.first').html_safe
