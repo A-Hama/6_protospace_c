@@ -27,4 +27,8 @@ class Prototype < ActiveRecord::Base
   def posted_date
     created_at.strftime('%b %d %a')
   end
+
+  scope :popular, -> {order('like_count DESC')}
+  scope :newest, -> {order('created_at DESC')}
+
 end

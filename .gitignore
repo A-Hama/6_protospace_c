@@ -21,6 +21,9 @@ vendor/bundle
 /log/*.log
 /tmp
 
+#Ignore all images
+public/uploads/*
+
 # Ignore other unneeded files.
 doc/
 *.swp
