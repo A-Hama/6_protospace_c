@@ -35,7 +35,6 @@ $(document).on('turbolinks:load',function () {
       .done(function (data) {
         $('.proto-list').empty();
         data.forEach(function (data) {
-          console.log(data);
           html = buildHTML(data);
           $('.proto-list').append(html);
         });
@@ -54,7 +53,6 @@ $(document).on('turbolinks:load',function () {
     })
       .done(function (data) {
         $('.proto-list').empty();
-        console.log(data);
         data.forEach(function (data) {
           html = buildHTML(data);
           $('.proto-list').append(html);
