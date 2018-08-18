@@ -26,14 +26,6 @@ class PrototypesController < ApplicationController
     @prototype.destroy if current_user.id == @prototype.user.id
   end
 
-
-  private
-
-  def set_prototype
-    @prototype = Prototype.find(params[:id])
-    @like = @prototype.likes
-  end
-
   def edit
     @captures = @prototype.captured_images
     @captures.each do |capture|
@@ -50,22 +42,23 @@ class PrototypesController < ApplicationController
     end
   end
 
+
   private
 
-    def set_prototype
-      @prototype = Prototype.find(params[:id])
-    end
+  def set_prototype
+    @prototype = Prototype.find(params[:id])
+    @like = @prototype.likes
+  end
 
-
-    def prototype_params
-      params.require(:prototype).permit(
-        :title,
-        :catch_copy,
-        :concept,
-        :user_id,
-        captured_images_attributes: [:content, :status, :id]
-      )
-    end
+  def prototype_params
+    params.require(:prototype).permit(
+      :title,
+      :catch_copy,
+      :concept,
+      :user_id,
+      captured_images_attributes: [:content, :status, :id]
+    )
+  end
 
     def set_main_thumbnail
       captured_images.find_by(status: 0)
