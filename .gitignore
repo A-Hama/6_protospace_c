@@ -14,3 +14,21 @@
 public/uploads/*
 
 log/development.log
+
+*.cache
+
+*.cache
+
+tmp/cache/assets/sprockets/v3.0/4G/4GE_47uT4Dx7j9rvVLX5-6XGKCVCORAmSeGruH03Csg.cache
+
+tmp/cache/assets/sprockets/v3.0/4G/4GE_47uT4Dx7j9rvVLX5-6XGKCVCORAmSeGruH03Csg.cache
+
+tmp/cache/assets/sprockets/v3.0/4G/4GE_47uT4Dx7j9rvVLX5-6XGKCVCORAmSeGruH03Csg.cache
+
+tmp/cache/assets/sprockets/v3.0/5T/5Td83aUAjttDlrhdfEHUtA12Ecn22sowTLmW-6n0scI.cache
+
+tmp/cache/assets/sprockets/v3.0/5T/5Td83aUAjttDlrhdfEHUtA12Ecn22sowTLmW-6n0scI.cache
+
+tmp/cache/assets/sprockets/v3.0/a7/a7Szp_J5ulkxSCi7X2Jewf0wMvGRK9Cxz83ULgyfMlk.cache
+
+tmp/cache/assets/sprockets/v3.0/aW/aWzdZpRQEwmxhmECP9Uc7KlNe7dSRSXtrBLn95I7sQE.cache
