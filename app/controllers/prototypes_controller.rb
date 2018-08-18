@@ -43,6 +43,22 @@ class PrototypesController < ApplicationController
   end
 
 
+  def popular
+    @prototypes = Prototype.popular
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
+  def newest
+    @prototypes = Prototype.newest
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   private
 
   def set_prototype
@@ -60,7 +76,7 @@ class PrototypesController < ApplicationController
     )
   end
 
-    def set_main_thumbnail
-      captured_images.find_by(status: 0)
-    end
+  def set_main_thumbnail
+    captured_images.find_by(status: 0)
+  end
 end
