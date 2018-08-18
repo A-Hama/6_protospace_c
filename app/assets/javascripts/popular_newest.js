@@ -1,27 +1,27 @@
-$(function () {
+$(document).on('turbolinks:load',function () {
   function buildHTML(prototype) {
-  var html =   `<div class='col-sm-4 col-md-3 proto-content'>
-              <div class='thumbnail'>
-                <a href="/prototypes/${prototype.id}">
-                  <img src="${prototype.image.url}" />
-                </a>
-                <div class='caption'>
-                  <h3>
-                    ${prototype.title}
-                  </h3>
-                  <div class='proto-meta'>
-                    <div class='proto-user'>
-                      <a href="/users/${prototype.user.id}">
-                        ${prototype.user}
-                      </a>
-                    </div>
-                    <div class='proto-posted'>
-                      ${prototype.posted_date}
+  html =   `<div class='col-sm-4 col-md-3 proto-content'>
+                <div class='thumbnail'>
+                  <a href="/prototypes/${prototype.id}">
+                    <img src="${prototype.image.url}" />
+                  </a>
+                  <div class='caption'>
+                    <h3>
+                      ${prototype.title}
+                    </h3>
+                    <div class='proto-meta'>
+                      <div class='proto-user'>
+                        <a href="/users/${prototype.user.id}">
+                          ${prototype.user}
+                        </a>
+                      </div>
+                      <div class='proto-posted'>
+                        ${prototype.posted_date}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>`    
+              </div>`    
     return html;
   }
 
@@ -33,10 +33,11 @@ $(function () {
       dataType: 'json'
     })
       .done(function (data) {
-        $('#proto-list').empty();
+        $('.proto-list').empty();
         data.forEach(function (data) {
+          console.log(data);
           html = buildHTML(data);
-          $('#proto-list').append(html);
+          $('.proto-list').append(html);
         });
       })
       .fail(function () {
@@ -52,10 +53,11 @@ $(function () {
       dataType: 'json'
     })
       .done(function (data) {
-        $('#proto-list').empty();
+        $('.proto-list').empty();
+        console.log(data);
         data.forEach(function (data) {
           html = buildHTML(data);
-          $('#proto-list').append(html);
+          $('.proto-list').append(html);
         });
       })
       .fail(function () {
