@@ -44,7 +44,7 @@ class PrototypesController < ApplicationController
 
 
   def popular
-    @prototype = Prototype.popular.limit(20)
+    @prototypes = Prototype.popular.limit(20)
     respond_to do |format|
       format.html
       format.json
@@ -52,7 +52,7 @@ class PrototypesController < ApplicationController
   end
 
   def newest
-    @prototypes = Prototype.order('created_at DESC').limit(20)
+    @prototypes = Prototype.newest.limit(20)
     respond_to do |format|
       format.html
       format.json
