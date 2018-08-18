@@ -4,15 +4,24 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore bundler config.
-/.bundle
-
-# Ignore all logfiles and tempfiles.
-/log/*
-/log
 #Ignore all images
 public/uploads/*
 
+# Ignore bundler config.
+/.bundle
+
+# Ignore bundler gems.
+vendor/bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+<<<<<<< HEAD
 log/development.log
 
 *.cache
@@ -32,3 +41,13 @@ tmp/cache/assets/sprockets/v3.0/5T/5Td83aUAjttDlrhdfEHUtA12Ecn22sowTLmW-6n0scI.c
 tmp/cache/assets/sprockets/v3.0/a7/a7Szp_J5ulkxSCi7X2Jewf0wMvGRK9Cxz83ULgyfMlk.cache
 
 tmp/cache/assets/sprockets/v3.0/aW/aWzdZpRQEwmxhmECP9Uc7KlNe7dSRSXtrBLn95I7sQE.cache
+=======
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+>>>>>>> master
