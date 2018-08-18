@@ -13443,3 +13443,37 @@ Processing by PrototypesController#index as HTML
   Rendered shared/_messages.html.haml (0.2ms)
   Rendered shared/_footer.html.haml (0.1ms)
 Completed 200 OK in 144ms (Views: 138.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/?page=2" for ::1 at 2018-08-18 14:40:17 +0900
+Processing by PrototypesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mPrototype Load (2.0ms)[0m  SELECT  `prototypes`.* FROM `prototypes`  ORDER BY `prototypes`.`created_at` DESC LIMIT 10 OFFSET 10
+  Rendered prototypes/_prototype.html.haml (0.0ms)
+  [1m[36m (3.9ms)[0m  [1mSELECT COUNT(*) FROM `prototypes`[0m
+  Rendered prototypes/index.html.haml within layouts/application (50.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (36.8ms)
+  Rendered shared/_messages.html.haml (0.3ms)
+  Rendered shared/_footer.html.haml (0.4ms)
+Completed 200 OK in 250ms (Views: 194.2ms | ActiveRecord: 35.9ms)
+
+
+Started GET "/" for ::1 at 2018-08-18 14:40:23 +0900
+Processing by PrototypesController#index as HTML
+  [1m[36mPrototype Load (0.4ms)[0m  [1mSELECT  `prototypes`.* FROM `prototypes`  ORDER BY `prototypes`.`created_at` DESC LIMIT 10 OFFSET 0[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 17 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 16 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 15 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCapturedImage Load (0.5ms)[0m  SELECT  `captured_images`.* FROM `captured_images` WHERE `captured_images`.`prototype_id` = 14 AND `captured_images`.`status` = 0  ORDER BY `captured_images`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered prototypes/_prototype.html.haml (47.9ms)
+  Rendered prototypes/index.html.haml within layouts/application (63.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_header.html.haml (3.4ms)
+  Rendered shared/_messages.html.haml (0.1ms)
+  Rendered shared/_footer.html.haml (0.1ms)
+Completed 200 OK in 116ms (Views: 107.4ms | ActiveRecord: 7.7ms)
