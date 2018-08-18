@@ -257,10 +257,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
-<<<<<<< HEAD
   kaminari
-=======
->>>>>>> master
   mysql2 (~> 0.3.18)
   pg
   pry-byebug
