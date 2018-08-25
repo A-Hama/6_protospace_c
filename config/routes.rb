@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
+  get 'comments/create'
+
   devise_for :users
   root 'prototypes#index'
-  
+
   resources :prototypes do
     resources :likes, only: [:create, :destroy]
-    resources :comments. only: [:create, :destroy]
-    collection do 
+    resources :comments, only: [:create, :destroy, :edit]
+    collection do
       get 'popular'
       get 'newest'
     end
