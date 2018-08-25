@@ -1,0 +1,13 @@
+.comments
+  .h4 <コメント一覧>
+  - if comments
+    - comments.each do |comment|
+      .p
+        .strong
+          = link_to comment.user.name, "/users/#{comment.user_id}"
+      - if current_user == comment.user
+        = link_to prototype_comment_path(@prototype, comment), method: :delete do
+          .button.btn-outline-primary
+            .glyphicon.glyphicon-trash
+              削除
+        = comment.content

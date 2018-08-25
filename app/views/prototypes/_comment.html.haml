@@ -1,7 +1,6 @@
 .container
   - if user_signed_in?
-  - binding.pry
-    = form_for("/prototypes/#{prototype.id}/comments",  method: :post,  id: "new_comment" ) do |f|
+    = form_for [prototype, comment],  method: :post,  id: "new_comment" do |f|
       = f.text_field :content, placeholder: 'type a comment'
       = f.submit 'send'
 

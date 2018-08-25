@@ -45,3 +45,4 @@
       .like-button{id: "likes_buttons"}
         = render 'likes/like_button', prototype: @prototype, likes: @likes, like: @like
   = render 'prototypes/comment', prototype: @prototype, comment: @comment
+  = render 'prototypes/comments', comments: @prototype.comments, prototype: @prototype

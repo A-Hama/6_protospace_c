@@ -12,14 +12,16 @@ $(function(){
   $('#new_comment').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
-    var href = window.location.href + '/comments'
+    var href = window.location.href
+    console.log(href);
+    console.log(formData);
     $.ajax({
       url: href,
       type: "POST",
       data: formData,
       dataType: 'json',
-      processData: false,
       contentType: false
+      processData: false
     })
     .done(function(data){
       var html = buildHTML(data);
@@ -27,6 +29,7 @@ $(function(){
       $('.textbox').val('')
     })
     .fail(function(){
+      console.log(this);
       alert('error');
     })
   })
