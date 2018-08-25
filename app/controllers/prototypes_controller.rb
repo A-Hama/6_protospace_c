@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
-  before_action :set_prototype, only: [:show, :destroy, :edit, :update]
+  before_action :set_prototype, only: [:destroy, :edit, :update]
 
   def index
     @prototypes = Prototype.order(created_at: :desc).page(params[:page]).per(10)
@@ -20,8 +20,9 @@ class PrototypesController < ApplicationController
   end
 
   def show
+    @prototype = Prototype.includes(:comments, :user).find(params[:id])
     @comment = Comment.new
-    @comments = @prototype.comments.all
+    @comments = @prototype.comments
   end
 
   def destroy
@@ -79,10 +80,6 @@ class PrototypesController < ApplicationController
 
   def set_main_thumbnail
     captured_images.find_by(status: 0)
-  end
-
-  def comment_params
-    params.require(:comment).permit(:content, :prototype_id)
   end
 
 end
