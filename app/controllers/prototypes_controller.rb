@@ -12,7 +12,9 @@ class PrototypesController < ApplicationController
 
   def create
     @prototype = Prototype.new(prototype_params)
+    tag_list = params[:prototype][:tag_list].reject{|tag| tag == ""}
     if @prototype.save
+      @prototype.save_prototypes(tag_list)
       redirect_to :root, notice: 'New prototype was successfully created'
     else
       redirect_to ({ action: new }), alert: 'YNew prototype was unsuccessfully created'
@@ -20,6 +22,7 @@ class PrototypesController < ApplicationController
   end
 
   def show
+    @tags = @prototype.tags
   end
 
   def destroy
@@ -27,6 +30,7 @@ class PrototypesController < ApplicationController
   end
 
   def edit
+    @tags = @prototype.tags
     @captures = @prototype.captured_images
     @captures.each do |capture|
       capture.status == 0 ? @main_image = capture : @sub_image = capture
@@ -44,7 +48,7 @@ class PrototypesController < ApplicationController
 
 
   def popular
-    @prototypes = Prototype.popular
+    @prototypes = Prototype.popular.includes(:user)
     respond_to do |format|
       format.html
       format.json
@@ -52,7 +56,7 @@ class PrototypesController < ApplicationController
   end
 
   def newest
-    @prototypes = Prototype.newest
+    @prototypes = Prototype.newest.includes(:user)
     respond_to do |format|
       format.html
       format.json
