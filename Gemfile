@@ -28,6 +28,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'bullet'
   gem 'rspec-rails'
+  gem 'factory_girl_rails', "~> 4.4.1"
 end
 
 group :development do
