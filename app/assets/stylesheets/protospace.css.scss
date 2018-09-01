@@ -619,7 +619,7 @@ body {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 4px;ƒ
 
 
 
@@ -639,4 +639,21 @@ body {
 
 .glyphicon{
   float: right;
+  margin-right: 5px;
+
+}
+
+.comments{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#comment{
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px ;
+}
+
+#input_comment{
+  padding-left: 0px;
 }
