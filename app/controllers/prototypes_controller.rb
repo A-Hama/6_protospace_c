@@ -30,8 +30,9 @@ class PrototypesController < ApplicationController
   end
 
   def edit
-    @tag_list = @prototype.tags.pluck(:name)
-    @length = 3 - @tag_list.length
+    @tags = @prototype.tags
+    tag_list = @prototype.tags.pluck(:name)
+    @length = 3 - tag_list.length
     @captures = @prototype.captured_images
     @captures.each do |capture|
       capture.status == 0 ? @main_image = capture : @sub_image = capture
