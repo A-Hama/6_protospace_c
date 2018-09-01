@@ -1,8 +1,8 @@
 class PrototypesController < ApplicationController
-  before_action :set_prototype, only: [:destroy, :edit, :update]
+  before_action :set_prototype, only: [:show, :destroy, :edit, :update]
 
   def index
-    @prototypes = Prototype.order(created_at: :desc).page(params[:page]).per(10)
+    @prototypes = Prototype.includes(:user).order(created_at: :desc).page(params[:page]).per(10)
   end
 
   def new
@@ -15,12 +15,11 @@ class PrototypesController < ApplicationController
     if @prototype.save
       redirect_to :root, notice: 'New prototype was successfully created'
     else
-      redirect_to ({ action: 'new' }), alert: 'YNew prototype was unsuccessfully created'
+      redirect_to ({ action: 'new' }), alert: 'New prototype was unsuccessfully created'
     end
   end
 
   def show
-    @prototype = Prototype.includes(:comments, :user).find(params[:id])
     @comment = Comment.new
     @comments = @prototype.comments
   end
@@ -42,12 +41,12 @@ class PrototypesController < ApplicationController
       @prototype.update(prototype_params)
       redirect_to root_url, notice: 'prototype was successfully updated'
     else
-      render :index 
+      render :index
     end
   end
 
   def popular
-    @prototypes = Prototype.popular
+    @prototypes = Prototype.includes(:user).popular
     respond_to do |format|
       format.html
       format.json
@@ -55,7 +54,7 @@ class PrototypesController < ApplicationController
   end
 
   def newest
-    @prototypes = Prototype.newest
+    @prototypes = Prototype.includes(:user).newest
     respond_to do |format|
       format.html
       format.json

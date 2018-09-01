@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :prototypes do
     resources :likes, only: [:create, :destroy]
-    resources :comments, only: [:create, :destroy, :edit]
+    resources :comments, only: [:create, :destroy, :edit, :update]
     collection do
       get 'popular'
       get 'newest'
