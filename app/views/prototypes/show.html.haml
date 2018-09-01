@@ -42,7 +42,6 @@
       %h4 Tag List
       - if @tags.present?
         - @tags.each do |tag|
-          %ul.proto-tag-list.list-inline
-            %li
-              = link_to tag.name, tag, class: "btn btn-default"
+          %li.proto-tag-list
+            = link_to tag.name, tag, class: "btn btn-default"
 
