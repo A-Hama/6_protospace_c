@@ -22,7 +22,10 @@
               %li.list-group-item.col-md-4
                 .image-upload
                   = f.fields_for :captured_images, @sub_image[i] do |image|
-                    %img{src: @sub_image[i].content, width: "100%", height: "100%", title: @sub_image[i]}
+                    -if @sub_image[i].present?
+                      %img{src: @sub_image[i].content, width: "100%", height: "100%", title: @sub_image[i]}
+                    - else
+                      %img
                     = image.file_field :content, class: "image_file"
                     = image.hidden_field :status, value: "sub"
       .row.proto-description
