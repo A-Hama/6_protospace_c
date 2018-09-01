@@ -2,7 +2,6 @@ class CommentsController < ApplicationController
   before_action :authenticate_user!, only: [:create, :edit, :destroy, :update]
   before_action :set_comment, only:[:edit, :update, :destroy]
   before_action :set_prototype
-  # before_action :current_user?
 
 
   def create
@@ -51,7 +50,5 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
   end
 
-  # def current_user?
-  # end
 
 end
