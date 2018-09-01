@@ -7,4 +7,10 @@ class TagsController < ApplicationController
     @tag = Tag.find(params[:id])
     @prototypes = @tag.prototypes.page(params[:page]).per(10)
   end
+
+  def destroy
+    @tag = Tag.find(params[:id])
+    @tag.destroy
+    redirect_to root_path
+  end
 end
