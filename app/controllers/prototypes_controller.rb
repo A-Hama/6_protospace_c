@@ -82,8 +82,4 @@ class PrototypesController < ApplicationController
       captured_images_attributes: [:content, :status, :id]
     )
   end
-
-  def set_main_thumbnail
-    captured_images.find_by(status: 0)
-  end
 end
