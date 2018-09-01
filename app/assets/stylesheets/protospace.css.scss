@@ -636,3 +636,27 @@ body {
   }
 
 }
+
+.proto-tag-list{
+  display: inline-block;
+}
+
+.delete_link::after{
+  color: #000;
+  text-decoration: none;
+  content: "\f2ed";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 100%;
+  margin: 5px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.delete_tag{
+  font-size: 16px;
+}

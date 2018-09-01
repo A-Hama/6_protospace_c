@@ -35,10 +35,11 @@
         .col-md-12
           %h4 Tag List
         .col-md-3
-          %input#prototype-tag-list_{placeholder: "Taglist", type: "text", name: "prototype[tag_list][]"}
+          = text_field_tag :"prototype[tag_list][]","", placeholder: "Taglist", id: "prototype-tag-list_"
         .col-md-3
-          %input#prototype-tag-list_{placeholder: "Taglist", type: "text", name: "prototype[tag_list][]"}
+          = text_field_tag :"prototype[tag_list][]","", placeholder: "Taglist", id: "prototype-tag-list_"
         .col-md-3
-          %input#prototype-tag-list_{placeholder: "Taglist", type: "text", name: "prototype[tag_list][]"}
+          = text_field_tag :"prototype[tag_list][]","", placeholder: "Taglist", id: "prototype-tag-list_"
+          
       .row.text-center.proto-btn
         = f.submit "PUBLISH", id: "button", class: "btn btn-lg btn-primary btn-block"

@@ -17,7 +17,7 @@ class PrototypesController < ApplicationController
       @prototype.save_prototypes(tag_list)
       redirect_to :root, notice: 'New prototype was successfully created'
     else
-      redirect_to ({ action: new }), alert: 'YNew prototype was unsuccessfully created'
+      render :new, alert: 'YNew prototype was unsuccessfully created'
     end
   end
 
@@ -30,7 +30,8 @@ class PrototypesController < ApplicationController
   end
 
   def edit
-    @tags = @prototype.tags
+    @tag_list = @prototype.tags.pluck(:name)
+    @length = 3 - @tag_list.length
     @captures = @prototype.captured_images
     @captures.each do |capture|
       capture.status == 0 ? @main_image = capture : @sub_image = capture
@@ -38,8 +39,10 @@ class PrototypesController < ApplicationController
   end
 
   def update
+    tag_list = params[:prototype][:tag_list]
     if @prototype.user_id == current_user.id
       @prototype.update(prototype_params)
+      @prototype.save_prototypes(tag_list)
       redirect_to root_url, notice: 'prototype was successfully updated'
     else
       render :index 

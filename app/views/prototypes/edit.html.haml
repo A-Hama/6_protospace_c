@@ -34,9 +34,12 @@
           = f.text_area :concept, require: true, placeholder: "Input Concept"
         .col-md-12
           %h4 Tag List
-        - @tags.each do |tag|
-          .col-md-3
-            %input#prototype-tag-list_{placeholder: tag.name, type: "text", name: "prototype[tag_list][]"}
-              = fa_icon("backspace", class: "delete_tag")
+          .row
+            - @tag_list.each do |tag|
+              .col-md-3
+                = text_field_tag :"prototype[tag_list][]", tag, placeholder: "Input Tag Name"
+            - @length.times do |i|
+              .col-md-3
+                = text_field_tag :"prototype[tag_list][]", "", placeholder: "Input Tag Name"
       .row.text-center.proto-btn
         = f.submit "PUBLISH", id: "button", class: "btn btn-lg btn-primary btn-block"

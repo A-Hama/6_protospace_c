@@ -44,6 +44,5 @@
         - @tags.each do |tag|
           %ul.proto-tag-list.list-inline
             %li
-              %a{href: "tags/#{tag[:id]}", class: "btn btn-default"}
-                = tag.name
+              = link_to tag.name, tag, class: "btn btn-default"
 
