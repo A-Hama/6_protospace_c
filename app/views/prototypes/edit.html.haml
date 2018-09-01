@@ -34,10 +34,13 @@
           = f.text_area :concept, require: true, placeholder: "Input Concept"
         .col-md-12
           %h4 Tag List
+
           .row
-            - @tag_list.each do |tag|
-              .col-md-3
-                = text_field_tag :"prototype[tag_list][]", tag, placeholder: "Input Tag Name"
+            - @tags.each do |tag|
+              .col-md-3.delete_tag_link_parent
+                = text_field_tag :"prototype[tag_list][]", tag.name, placeholder: "Input Tag Name"
+                = link_to tag, method: :delete, class: "delete_tag_link", data: { confirm: "このタグを削除しますか？"} do
+                  = fa_icon("trash-o")
             - @length.times do |i|
               .col-md-3
                 = text_field_tag :"prototype[tag_list][]", "", placeholder: "Input Tag Name"
