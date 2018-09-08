@@ -4,6 +4,7 @@ class Prototype < ActiveRecord::Base
   has_many :likes, dependent: :destroy
   has_many :tag_maps, dependent: :destroy
   has_many :tags, through: :tag_maps
+  has_many :comments, dependent: :destroy
 
   accepts_nested_attributes_for :captured_images, reject_if: :reject_sub_images
 
