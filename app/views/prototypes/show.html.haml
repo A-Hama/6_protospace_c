@@ -35,14 +35,14 @@
         = link_to '削除する', @prototype, method: :delete, class: "btn btn-primary btn-lg", role: "button"
         = link_to '編集する', edit_prototype_path(@prototype), class: "btn btn-primary btn-lg", role: "button"
     .col-md-3
-      %h4 Tag List
-      %ul.proto-tag-list.list-inline
-        %li
-          %a{href: "#", class: "btn btn-default"} iPad
-        %li
-          %a{href: "#", class: "btn btn-default"} wireframe
-    .col-md-3
       .like-button{id: "likes_buttons"}
         = render 'likes/like_button', prototype: @prototype, likes: @likes, like: @like
+  .row
+    .col-md-12
+      %h4 Tag List
+      - if @tags.present?
+        - @tags.each do |tag|
+          %li.proto-tag-list
+            = link_to tag.name, tag, class: "btn btn-default"
   = render 'prototypes/comment', prototype: @prototype, comment: @comment
   = render 'prototypes/comments', comments: @prototype.comments, prototype: @prototype
