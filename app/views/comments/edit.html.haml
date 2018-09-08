@@ -1,0 +1,11 @@
+.container.comment.clearfix
+  = form_for [@prototype, @comment] do |f|
+    .col-md-8.col-md-offset-2
+      %header.row.comments-nav.row
+        .col-md-12
+        %h2 Edit Comment
+        .comment.col-md-12
+          = f.text_field :content, id: "comment", placeholder: "Input Comment", autofocus: true, required: true
+        .row.text-center.comment-btn
+      .actions
+        = f.submit "SAVE", id: "button", class: "btn btn-lg btn-primary btn-block"

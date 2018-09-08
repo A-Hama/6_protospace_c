@@ -1,0 +1,20 @@
+.comments
+  %h4 コメント一覧
+  - if comments
+    - comments.includes(:user).each do |comment|
+      .comment{"data-comment-id": comment.id}
+        %strong
+          = link_to comment.user.name, "/users/#{comment.user_id}"
+        - if current_user == comment.user
+          = link_to prototype_comment_path(@prototype, comment), method: :delete do
+            .button.btn-outline-primary
+              .glyphicon.glyphicon-trash
+                削除
+          = link_to edit_prototype_comment_path(@prototype, comment), method: :get do
+            .button.btn-outline-primary
+              .glyphicon.glyphicon-pencil
+                編集
+          %p.comment_content
+            = comment.content
+
+

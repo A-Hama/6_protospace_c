@@ -1,0 +1,8 @@
+.container{id: "input_comment"}
+  %h4 コメントする
+  - if user_signed_in?
+    = form_for [prototype, comment],  method: :post,  id: "new_comment" do |f|
+      = f.text_field :content, id: "comment", placeholder: 'type a comment'
+      = f.submit 'send', class: "btn btn-lg btn-primary btn-block"
+
+

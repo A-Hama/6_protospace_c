@@ -21,6 +21,17 @@ ActiveRecord::Schema.define(version: 20180825032657) do
 
   add_index "captured_images", ["prototype_id"], name: "index_captured_images_on_prototype_id", using: :btree
 
+  create_table "comments", force: :cascade do |t|
+    t.integer  "user_id",      limit: 4,   null: false
+    t.integer  "prototype_id", limit: 4,   null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "content",      limit: 255
+  end
+
+  add_index "comments", ["prototype_id"], name: "index_comments_on_prototype_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
+
   create_table "likes", force: :cascade do |t|
     t.integer  "user_id",      limit: 4, null: false
     t.integer  "prototype_id", limit: 4, null: false
@@ -83,6 +94,8 @@ ActiveRecord::Schema.define(version: 20180825032657) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   add_foreign_key "captured_images", "prototypes"
+  add_foreign_key "comments", "prototypes"
+  add_foreign_key "comments", "users"
   add_foreign_key "likes", "prototypes"
   add_foreign_key "likes", "users"
   add_foreign_key "prototypes", "users"

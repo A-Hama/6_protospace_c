@@ -2,7 +2,7 @@ class PrototypesController < ApplicationController
   before_action :set_prototype, only: [:show, :destroy, :edit, :update]
 
   def index
-    @prototypes = Prototype.order(created_at: :desc).page(params[:page]).per(10)
+    @prototypes = Prototype.includes(:user).order(created_at: :desc).page(params[:page]).per(10)
   end
 
   def new
@@ -36,8 +36,9 @@ class PrototypesController < ApplicationController
     tag_list = @prototype.tags.pluck(:name)
     @length = 3 - tag_list.length
     @captures = @prototype.captured_images
+    @sub_image =[]
     @captures.each do |capture|
-      capture.status == 0 ? @main_image = capture : @sub_image = capture
+      capture.status == "main" ? @main_image = capture : @sub_image << capture
     end
   end
 
@@ -48,10 +49,9 @@ class PrototypesController < ApplicationController
       @prototype.save_prototypes(tag_list)
       redirect_to root_url, notice: 'prototype was successfully updated'
     else
-      render :index 
+      render :index
     end
   end
-
 
   def popular
     @prototypes = Prototype.includes(:user).popular
