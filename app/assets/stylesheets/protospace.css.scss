@@ -619,7 +619,7 @@ body {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  border-radius: 4px;ƒ
+  border-radius: 4px;
 
 
 
@@ -635,6 +635,22 @@ body {
     color: #a94442;
   }
 
+}
+
+.proto-tag-list{
+  display: inline-block;
+}
+
+.delete_tag_link_parent{
+  position: relative;
+}
+
+.delete_tag_link{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 30px;
+  top:  7px;
 }
 
 .glyphicon{

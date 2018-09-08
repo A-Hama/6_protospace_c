@@ -12,7 +12,9 @@ class PrototypesController < ApplicationController
 
   def create
     @prototype = Prototype.new(prototype_params)
+    tag_list = params[:prototype][:tag_list].reject{|tag| tag == ""}
     if @prototype.save
+      @prototype.save_prototypes(tag_list)
       redirect_to :root, notice: 'New prototype was successfully created'
     else
       redirect_to ({ action: 'new' }), alert: 'New prototype was unsuccessfully created'
@@ -20,6 +22,7 @@ class PrototypesController < ApplicationController
   end
 
   def show
+    @tags = @prototype.tags
     @comment = Comment.new
     @comments = @prototype.comments
   end
@@ -29,6 +32,9 @@ class PrototypesController < ApplicationController
   end
 
   def edit
+    @tags = @prototype.tags
+    tag_list = @prototype.tags.pluck(:name)
+    @length = 3 - tag_list.length
     @captures = @prototype.captured_images
     @sub_image =[]
     @captures.each do |capture|
@@ -37,8 +43,10 @@ class PrototypesController < ApplicationController
   end
 
   def update
+    tag_list = params[:prototype][:tag_list]
     if @prototype.user_id == current_user.id
       @prototype.update(prototype_params)
+      @prototype.save_prototypes(tag_list)
       redirect_to root_url, notice: 'prototype was successfully updated'
     else
       render :index
@@ -77,9 +85,4 @@ class PrototypesController < ApplicationController
       captured_images_attributes: [:content, :status, :id]
     )
   end
-
-  def set_main_thumbnail
-    captured_images.find_by(status: 0)
-  end
-
 end

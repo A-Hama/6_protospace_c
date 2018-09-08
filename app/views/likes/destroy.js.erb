@@ -1,4 +1,0 @@
-// $("<%= @id_name %>").html('<%= j(render("likes/like_button", prototype: @prototype  )) %>');
-// $("#<= id_heart %>").removeClass(".fa");
-// $("#<= id_heart %>").addClass('.fa.fa-heart-o.fa-2x.heart-color');
-$("#likes_buttons").html("<%= escape_javascript(render partial: 'likes/like_button', locals: {prototype: @prototype}) %>");
