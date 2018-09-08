@@ -17,12 +17,14 @@ class PrototypesController < ApplicationController
       @prototype.save_prototypes(tag_list)
       redirect_to :root, notice: 'New prototype was successfully created'
     else
-      render :new, alert: 'YNew prototype was unsuccessfully created'
+      redirect_to ({ action: 'new' }), alert: 'New prototype was unsuccessfully created'
     end
   end
 
   def show
     @tags = @prototype.tags
+    @comment = Comment.new
+    @comments = @prototype.comments
   end
 
   def destroy
@@ -52,7 +54,7 @@ class PrototypesController < ApplicationController
 
 
   def popular
-    @prototypes = Prototype.popular.includes(:user)
+    @prototypes = Prototype.includes(:user).popular
     respond_to do |format|
       format.html
       format.json
@@ -60,7 +62,7 @@ class PrototypesController < ApplicationController
   end
 
   def newest
-    @prototypes = Prototype.newest.includes(:user)
+    @prototypes = Prototype.includes(:user).newest
     respond_to do |format|
       format.html
       format.json
