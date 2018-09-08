@@ -30,7 +30,7 @@ class PrototypesController < ApplicationController
 
   def edit
     @captures = @prototype.captured_images
-    @sub_image =[]
+    @sub_image = []
     @captures.each do |capture|
       capture.status == "main" ? @main_image = capture : @sub_image << capture
     end

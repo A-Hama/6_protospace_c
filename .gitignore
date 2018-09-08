@@ -34,3 +34,7 @@ doc/
 .secret
 
 log/development.log
+
+tmp/cache/assets/sprockets/v3.0/ju/juHqvc_ouEe8NFcLpW-_QL84vpp6IsWA0xtG4p2aHmQ.cache
+
+*.cache
